@@ -20,7 +20,7 @@ while True:
         line = ser.readline().decode('utf-8').rstrip()
         print(f"Причина: {line}")
         if line == "ALARM":
-            play_audio('C:/Users/Eva-Desktop/Downloads/04299.mp3')
+            play_audio('./04299.mp3')
         elif line == "RESET":
             close_audio_app()
     time.sleep(1)
